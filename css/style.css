@@ -1,0 +1,155 @@
+/*fonts
+Títulos
+"Playfair Display", serif; 
+
+Párrafos
+"Montserrat", sans-serif;
+
+Subtítulos 
+"Aleo", serif;
+
+Paleta de colores
+#C3B1E1 
+#EFEBF7
+#1E1F4B
+#9A9A9A
+#F5ECE5
+#D6B67B
+#4D4093
+
+*/
+
+/* Reset de CSS*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Estilos del header*/
+.site-header {
+background-color: #EFEBF7;
+display: flex;
+
+
+}
+
+.logo img{
+    height: 56px;
+}
+
+.main-nav ul {
+    list-style: none;
+    
+}
+
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: #1E1F4B;
+    font-family:"Aleo", serif;
+    
+}
+
+.body {
+    color: #EFEBF7;
+}
+    
+.hero {
+   background-color: #1E1F4B; 
+  
+}
+
+
+.hero h1 {
+font-family: "Playfair Display", serif;
+color: #EFEBF7;
+font-size: 48pt;
+
+}
+
+.hero p {
+    font-family: "Montserrat", sans-serif;
+    color: #EFEBF7;
+    font-size: 20pt;
+    
+}
+
+.parrafo-img-blanco h2 {
+font-family: "Playfair Display", serif;
+color: #4D4093;
+font-size: 32pt;
+}
+
+.parrafo-img-blanco h3{
+    font-family:"Montserrat", sans-serif;
+    font-weight: light;
+    color:#1E1F4B;
+    font-size: 16pt;
+}
+    
+.parrafo-img-blanco h4{
+    font-family:"Aleo", serif;;
+    font-weight: normal;
+    color:#1E1F4B;
+    font-size: 12pt;
+}
+
+.parrafo-img-blanco p{
+    font-family: "Montserrat", sans-serif;
+    color: #1E1F4B;
+    font-size: 14pt;
+}
+
+.parrafo-img-oscuro{
+    background-color: #1E1F4B;
+}
+
+.parrafo-img-oscuro h2{
+    font-family:"Playfair Display", serif;
+    color:#EFEBF7;
+    font-size: 32pt;
+}
+
+.parrafo-img-oscuro h3{
+    font-family:"Montserrat", sans-serif;
+    font-weight: lighter;
+    color:#EFEBF7;
+    font-size: 16pt;
+}
+
+.parrafo-img-oscuro p{
+    font-family: "Montserrat", sans-serif;
+    color: #EFEBF7;
+    font-size: 14pt;
+}
+.parrafo-img-oscuro h4{
+    font-family:"Aleo", serif;;
+    font-weight: normal;
+    color:#EFEBF7;
+    font-size: 12pt;
+}
+
+
+.call-to-action {
+    font-family: "Aleo", serif;
+    color: #1E1F4B;
+    background-color: #D6B67B;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.site-footer {
+    background-color: #EFEBF7;
+    display: flex;
+
+}
+
+.logo-footer {
+    height: 32px;
+}
+.text-footer {
+    font-family: "Aleo", serif;
+    color: #1E1F4B;
+    font-size: small;
+}
