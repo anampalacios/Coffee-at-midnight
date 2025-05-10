@@ -43,14 +43,15 @@
     <main>
         <section class="hero">
             <!--hero section contacto-->
-            <div class="hero-content">
+            <div class="hero-contact-content">
                 <h1>Contáctanos</h1>
                 <p>¿Tienes una pregunta, una idea, una canción favorita que querés que suene en el café? Nos encanta recibir mensajes tanto como servir café caliente en días fríos.</p>
             </div>
            
         </section>
-        <section class="parrafo-img-blanco">
-            <h2>Hablemos, incluso después de medianoche</h2>
+        <section class="parrafo-img-blanco contact-form">
+            <div class="contact-form-text-content">
+                <h2>Hablemos, incluso después de medianoche</h2>
             <p>Escríbenos para reservas, colaboraciones o simplemente para decirnos cuál es tu era favorita.</p>
             <!--icono mail-->
             <p>coffeeatmidnight@gmail.com</p>
@@ -58,8 +59,9 @@
             <p>01-12- 13-1989</p>
             <!--icono ubicación-->
             <p>Cornelia Street, 13</p>
-        </section>
-        <section class="Formulario">
+            </div>
+            
+        <div class="Formulario">
             <form action="/submit" method="post">
                 <label for="nombre">Nombre y apellido:*</label>
                 <input type="text" name="Nombre y apellido" class="input-form">
@@ -77,16 +79,21 @@
                 <textarea name="mensaje" id="mensaje"></textarea>
                 <input type="submit" value="Enviar">
             </form>
+        </div> 
         </section>
         
     </main>
     <footer class="site-footer">
         <!--información de contacto, logo y horarios-->
-        <img src="../assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight">
+        <div class="footer-logo">
+            <img src="./assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight">
+        </div>
+        <div class="footer-datos">
             <p>Dirección: Cornelia Street, 13</p>
             <p>Horarios:</p>
             <p>Lunes a Jueves: 9:00 a.m. a 10:00 p.m.</p>
             <p>Viernes a Domingo: 10:00 a.m. a 1:00 a.m.</p>
+        </div>
        
     </footer>
 </body>

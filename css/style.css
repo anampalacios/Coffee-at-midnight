@@ -57,6 +57,8 @@ display: flex;
     
 .hero {
    background-color: #1E1F4B; 
+   height: 700 px;
+   margin: 100 px;
   
 }
 
