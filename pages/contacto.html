@@ -41,9 +41,9 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero hero-contact">
             <!--hero section contacto-->
-            <div class="hero-contact-content">
+            <div class="hero-content">
                 <h1>Contáctanos</h1>
                 <p>¿Tienes una pregunta, una idea, una canción favorita que querés que suene en el café? Nos encanta recibir mensajes tanto como servir café caliente en días fríos.</p>
             </div>
@@ -51,33 +51,53 @@
         </section>
         <section class="parrafo-img-blanco contact-form">
             <div class="contact-form-text-content">
-                <h2>Hablemos, incluso después de medianoche</h2>
+            <h2>Hablemos, incluso después de medianoche</h2>
             <p>Escríbenos para reservas, colaboraciones o simplemente para decirnos cuál es tu era favorita.</p>
-            <!--icono mail-->
+           <div class="icons-contact">
+              <!--icono mail-->
+            <img src="../assets/img/icons/material-symbols-light_mail-outline-sharp.png" alt="ícono de correo">
             <p>coffeeatmidnight@gmail.com</p>
+           </div>
+          
+           <div class="icons-contact">
             <!--icono telefono-->
+            <img src="../assets/img/icons/tabler_phone.png" alt="ícono de teléfono">
             <p>01-12- 13-1989</p>
-            <!--icono ubicación-->
+           </div>
+            
+           <div class="icons-contact">
+             <!--icono ubicación-->
+             <img src="../assets/img/icons/proicons_location.png" alt="ícono de ubicaión">
             <p>Cornelia Street, 13</p>
+           </div>
+           
             </div>
             
-        <div class="Formulario">
+        <div class="formulario">
             <form action="/submit" method="post">
+             
                 <label for="nombre">Nombre y apellido:*</label>
                 <input type="text" name="Nombre y apellido" class="input-form">
-
+                
+               
+             
                 <label for="e-mail">E-mail:*</label>
                 <input type="email" name="e-mail" class="input-form"> 
+               
+                
 
                 <label for="teléfono">Teléfono:</label>
                 <input type="number" name="teléfono" class="input-form">
 
-                <label for="asunto">Asunto</label>
+                <label for="asunto">Asunto:</label>
                 <input type="text" name="Asunto" class="input-form">
 
-                <label for="mensaje">Mensaje</label>
+                <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mensaje"></textarea>
-                <input type="submit" value="Enviar">
+                <div>
+                     <input type="submit" value="Enviar">
+                </div>
+               
             </form>
         </div> 
         </section>
@@ -86,11 +106,19 @@
     <footer class="site-footer">
         <!--información de contacto, logo y horarios-->
         <div class="footer-logo">
-            <img src="./assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight">
+            <img src="../assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight">
         </div>
-        <div class="footer-datos">
-            <p>Dirección: Cornelia Street, 13</p>
-            <p>Horarios:</p>
+        <div class="text-footer footer-redes">
+            <!--instagram-->
+            <p>coffeeatmidnight</p>
+            <!--tiktok-->
+            <p>coffeeatmidnight</p>
+            <!--youtube-->
+           <p>coffeeatmidnight</p> 
+        </div>
+        <div class="text-footer footer-datos">
+             <p><strong>Dirección:</strong>Cornelia Street, 13</p>
+            <p><strong>Horarios:</strong> </p>
             <p>Lunes a Jueves: 9:00 a.m. a 10:00 p.m.</p>
             <p>Viernes a Domingo: 10:00 a.m. a 1:00 a.m.</p>
         </div>

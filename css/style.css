@@ -30,15 +30,25 @@ Paleta de colores
 .site-header {
 background-color: #EFEBF7;
 display: flex;
-
+justify-content: space-between; /*logo a la izquierda, nav a la derecha*/
+align-items: center; /*centrado vertical */
+padding: 1.25rem 6.25rem;
 
 }
 
 .logo img{
-    height: 56px;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    aspect-ratio: 351.40/56.00;
+
 }
 
 .main-nav ul {
+    display: flex;
+    gap: 2rem;
     list-style: none;
     
 }
@@ -51,56 +61,250 @@ display: flex;
     
 }
 
+/**Estilos de body**/
+
 .body {
     color: #EFEBF7;
 }
     
+/**estilos de hero section**/
 .hero {
-   background-color: #1E1F4B; 
-   height: 700 px;
-   margin: 100 px;
-  
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+   border-radius:0 0 12.5rem 12.5rem;
 }
 
+.hero-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding:7.5rem 6.25rem ;
+
+}
 
 .hero h1 {
 font-family: "Playfair Display", serif;
 color: #EFEBF7;
-font-size: 48pt;
+font-size: 6rem;
+line-height: normal;
+margin-bottom: 2.25rem;
+
 
 }
 
 .hero p {
     font-family: "Montserrat", sans-serif;
     color: #EFEBF7;
-    font-size: 20pt;
+    font-size: 1.75rem;
     
 }
+
+.hero-home {
+background-image: url('../assets/img/hero-images/hero-img-home.png');
+
+}
+
+.hero-nosotros {
+    background-image:url('../assets/img/hero-images/hero-img-nosotros.png') ;
+}
+
+.hero-contact {
+    background-image: url('../assets/img/hero-images/hero-img-contacto.png');
+}
+
+.hero-gallery {
+background-image: url('../assets/img/hero-images/hero-img-galeria.png');
+}
+
+.hero-menu {
+    background-image: url('../assets/img/hero-images/hero-img-menu.png');
+}
+
+/**layouts de secciones**/
+
+.text-left-image-section{
+ display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 7.5rem 6.25rem;
+    gap: 5rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.img-content-text-left{
+    display: inline-block;
+    text-align: center;
+}
+
+.text-left-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.text-right-image-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 7.5rem 6.25rem;
+    gap: 6.25rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-right-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+ /**dos columnas.-menu**/
+
+ .menu-clasicos{
+    margin-top: 2rem;
+ }
+
+ .platos-especiales{
+margin-top: 3rem 
+
+ }
+
+ .grid-header{
+    display: flex;
+    padding: 0.25rem 6.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+.two-column-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 6.25rem;
+}
+
+.coffee-menu{
+gap: 1rem;
+margin-bottom: 2.5rem;
+box-sizing: border-box;
+}
+
+.coffee-menu h3{
+    font-weight: bold;
+}
+
+/**dos columnas-galeria**/
+
+.galeria-miniatura{
+gap: 1rem;
+margin-bottom: 2.5rem;
+box-sizing: border-box;
+}
+.galeria-miniatura img{
+margin-bottom: 2.5rem;
+}
+
+/**sección staff**/
+
+.staff-section{
+  padding: 6.25rem 6.25rem;
+  text-align: start;  
+}
+
+.staff-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.staff-card img{
+    margin-bottom: 2.25rem;
+}
+
+.staff-card h4{
+    margin-bottom: 2.25rem;
+}
+.cta-final-staff{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/**contact form**/
+
+.icons-contact{
+display: inline;
+}
+
+
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 6.25rem;
+}
+
+.formulario{
+   
+    font-family: "Montserrat", sans-serif;
+    color: #1E1F4B;
+    padding: 2rem;
+    min-width: 18rem;
+    max-width: 37.5rem;
+    margin: 0 auto;
+    background-color: #D1D2E1;
+    border-radius:1.5rem;
+}
+.formulario label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    background-color: #D6B67B;
+    color: #1E1F4B;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+   
+}
+
+/**estilos generales de las secciones- font y palette**/
 
 .parrafo-img-blanco h2 {
 font-family: "Playfair Display", serif;
 color: #4D4093;
-font-size: 32pt;
+font-size: 3rem;
+margin-bottom: 3rem;
 }
 
 .parrafo-img-blanco h3{
     font-family:"Montserrat", sans-serif;
-    font-weight: light;
+    font-weight: bold;
     color:#1E1F4B;
-    font-size: 16pt;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
     
 .parrafo-img-blanco h4{
     font-family:"Aleo", serif;;
     font-weight: normal;
     color:#1E1F4B;
-    font-size: 12pt;
+    font-size: 1rem;
 }
 
 .parrafo-img-blanco p{
     font-family: "Montserrat", sans-serif;
     color: #1E1F4B;
-    font-size: 14pt;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .parrafo-img-oscuro{
@@ -110,48 +314,73 @@ font-size: 32pt;
 .parrafo-img-oscuro h2{
     font-family:"Playfair Display", serif;
     color:#EFEBF7;
-    font-size: 32pt;
+   font-size: 3rem;
+margin-bottom: 3rem;
 }
 
 .parrafo-img-oscuro h3{
     font-family:"Montserrat", sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     color:#EFEBF7;
-    font-size: 16pt;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+
 }
 
 .parrafo-img-oscuro p{
     font-family: "Montserrat", sans-serif;
     color: #EFEBF7;
-    font-size: 14pt;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 .parrafo-img-oscuro h4{
-    font-family:"Aleo", serif;;
+    font-family:"Aleo", serif;
     font-weight: normal;
     color:#EFEBF7;
-    font-size: 12pt;
+    font-size: 1rem;
 }
 
-
+/**call to action**/
 .call-to-action {
     font-family: "Aleo", serif;
     color: #1E1F4B;
     background-color: #D6B67B;
+    border-style: none;
     text-decoration: none;
     font-size: medium;
+    display: inline-flex;
+    height: 3rem;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    border-radius: 3rem;
+    margin-top: 2.25rem;
 }
 
+/**estilos del footer**/
 .site-footer {
     background-color: #EFEBF7;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    justify-content: space-between; /*logo a la izquierda, texto a la derecha*/
+    align-items: center; /*centrado vertical */
+    padding: 1.25rem 6.25rem;
 
 }
 
 .logo-footer {
-    height: 32px;
+    height: 2rem;
 }
 .text-footer {
     font-family: "Aleo", serif;
     color: #1E1F4B;
     font-size: small;
+}
+
+.footer-redes {
+    grid-row: 2;
+    display: inline-flex;
 }
