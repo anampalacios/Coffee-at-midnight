@@ -50,79 +50,80 @@
            
         </section>
         <section class="parrafo-img-blanco contact-form">
-            <div class="contact-form-text-content">
+           <div class="contact-form-text-content">
             <h2>Hablemos, incluso después de medianoche</h2>
             <p>Escríbenos para reservas, colaboraciones o simplemente para decirnos cuál es tu era favorita.</p>
-           <div class="icons-contact">
-              <!--icono mail-->
-            <img src="../assets/img/icons/material-symbols-light_mail-outline-sharp.png" alt="ícono de correo">
-            <p>coffeeatmidnight@gmail.com</p>
-           </div>
-          
-           <div class="icons-contact">
-            <!--icono telefono-->
-            <img src="../assets/img/icons/tabler_phone.png" alt="ícono de teléfono">
-            <p>01-12- 13-1989</p>
-           </div>
             
-           <div class="icons-contact">
-             <!--icono ubicación-->
-             <img src="../assets/img/icons/proicons_location.png" alt="ícono de ubicaión">
-            <p>Cornelia Street, 13</p>
-           </div>
-           
-            </div>
+            <ul class="contact-list">
+                <li class="icons-contact">
+                    <img src="../assets/img/icons/material-symbols-light_mail-outline-sharp.png" alt="ícono de correo">
+                    <p>coffeeatmidnight@gmail.com</p>
+                 </li>
+                
+                 <li class="icons-contact">
+                    <img src="../assets/img/icons/tabler_phone.png" alt="ícono de teléfono">
+                    <p>01-12-13-1989</p>
+                </li>
+                <li class="icons-contact">
+                    <img src="../assets/img/icons/proicons_location.png" alt="ícono de ubicación">
+                    <p>Cornelia Street, 13</p>
+                </li>
+             </ul>
+         </div>
             
         <div class="formulario">
             <form action="/submit" method="post">
-             
-                <label for="nombre">Nombre y apellido:*</label>
-                <input type="text" name="Nombre y apellido" class="input-form">
-                
-               
-             
-                <label for="e-mail">E-mail:*</label>
-                <input type="email" name="e-mail" class="input-form"> 
-               
-                
-
-                <label for="teléfono">Teléfono:</label>
-                <input type="number" name="teléfono" class="input-form">
-
-                <label for="asunto">Asunto:</label>
-                <input type="text" name="Asunto" class="input-form">
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje"></textarea>
-                <div>
-                     <input type="submit" value="Enviar">
+                 <label for="nombre">Nombre y apellido:*</label>
+                 <input type="text" name="Nombre y apellido" id="nombre" class="input-form">
+                 
+                 <label for="e-mail">E-mail:*</label>
+                 <input type="email" name="e-mail" id="email" class="input-form"> 
+                 
+                 <label for="teléfono">Teléfono:</label>
+                 <input type="tel" name="telefono" id="telefono" class="input-form">
+                 
+                 <label for="asunto">Asunto*:</label>
+                 <input type="text" name="Asunto" id="asunto" class="input-form">
+                 
+                 <label for="mensaje">Mensaje*:</label>
+                 <textarea name="mensaje" id="mensaje" class="input-form textarea-form"></textarea>
+                 
+                 <div class="boton-enviar">
+                     <input type="submit" value="Envía">
                 </div>
-               
             </form>
         </div> 
-        </section>
+    </section>
         
     </main>
     <footer class="site-footer">
-        <!--información de contacto, logo y horarios-->
-        <div class="footer-logo">
-            <img src="../assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img class="logo-footer" src="../assets/img/Logo coffee at midnight.svg" alt="logo coffee at midnight"/>
+            </div>
+             <ul class="lista-redes-footer">
+                <li class="instagram">
+                    <img src="../assets/img/icons/ri_instagram-line.svg" alt="logo instagram"/>
+                    <p>coffeeatmidnight</p>
+                </li>
+                <li class="tiktok">
+                     <img src="../assets/img/icons/ic_baseline-tiktok.png" alt="logo tiktok"/>
+                     <p>coffeeatmidnight</p>
+                    </li>
+                <li class="youtube">
+                    <img src="../assets/img/icons/iconoir_youtube.png" alt="logo youtube"/>
+                    <p>coffeeatmidnight</p>
+                </li>
+            </ul>
         </div>
-        <div class="text-footer footer-redes">
-            <!--instagram-->
-            <p>coffeeatmidnight</p>
-            <!--tiktok-->
-            <p>coffeeatmidnight</p>
-            <!--youtube-->
-           <p>coffeeatmidnight</p> 
-        </div>
+        
         <div class="text-footer footer-datos">
-             <p><strong>Dirección:</strong>Cornelia Street, 13</p>
-            <p><strong>Horarios:</strong> </p>
+            <p><strong>Dirección:</strong></p>
+            <p>Cornelia Street, 13</p>
+            <p><strong>Horarios:</strong></p>
             <p>Lunes a Jueves: 9:00 a.m. a 10:00 p.m.</p>
             <p>Viernes a Domingo: 10:00 a.m. a 1:00 a.m.</p>
         </div>
-       
     </footer>
 </body>
 </html>
