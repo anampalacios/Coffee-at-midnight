@@ -1,0 +1,27 @@
+//BOTONES CALL TO ACTION
+
+
+.call-to-action {
+    font-family: $font-accent;
+    color: $primary-color-dark;
+    background-color: $accent-color;
+    border-style: none;
+    text-decoration: none;
+    font-size: medium;
+    display: inline-flex;
+    height: 3rem;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    border-radius: 3rem;
+    margin-top: 2.25rem;
+
+    :hover{
+        background-color: #C27A0A;
+        color: $primary-color-light;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}

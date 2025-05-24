@@ -1,0 +1,249 @@
+//ESTILOS HEADER
+
+.site-header {
+    display: flex;
+    justify-content: space-between; /*logo a la izquierda, nav a la derecha*/
+    align-items: center; /*centrado vertical */
+    padding: 1.25rem 6.25rem;
+
+}
+
+.logo img{
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    aspect-ratio: 351.40/56.00;
+
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    
+}
+
+//ESTILOS DE HERO SECTION
+
+.hero {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+   border-radius:0 0 12.5rem 12.5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:7.5rem 6.25rem ;
+}
+
+//ESTILOS DE CONTENIDO
+
+.text-side-image-section{
+    display: grid; 
+    padding: 7.5rem 6.25rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-content-text-left {
+    display: inline-block;
+    text-align: center;
+}
+
+
+//LAYOUT DE DOS COLUMNAS
+
+.grid-header{
+    display: flex;
+    padding: 0 6.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.two-column-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 6.25rem;
+    gap: 1rem;
+}
+
+.two-column-content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 100%;
+    gap: 0.25rem;
+    margin-bottom: 2.5rem;
+    img {
+         max-width: 100%;
+         height: auto;
+    }
+
+    p {
+        max-width: 95%;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.gallery-content {
+    margin-top: 5rem;
+}
+
+.platos-especiales{
+    padding: 1.5rem 0;
+}
+
+//SECCION STAFF
+
+.staff-section{
+  padding: 6.25rem 6.25rem;
+  text-align: start;  
+}
+
+.staff-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.staff-card {
+    img {
+        margin-bottom: 2.25rem;
+    }
+    h4 {
+         margin-bottom: 2.25rem;
+         text-align: center;
+    }
+    
+}
+
+.parrafo-smaller{
+    font-size: 0.5rem;
+    line-height: 1.4;
+}
+
+
+.cta-final-staff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+//CONTACT FORM
+
+.contact-list {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.icons-contact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  img {
+    width: 2.5rem;
+    height: auto;
+  }
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 6.25rem;
+}
+
+//FORMULARIO
+
+.formulario{
+    border-radius:1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    margin: 2rem auto;
+    label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: 0.95rem; 
+    }
+} 
+
+.input-form {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    box-sizing: border-box;
+}
+
+.textarea-form {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+.boton-enviar {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+//FOOTER 
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 6.25rem;
+  gap: 2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.logo-footer {
+    height: 4rem;
+}
+
+.lista-redes-footer {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    img {
+        height: 1.75rem;   
+    }
+}

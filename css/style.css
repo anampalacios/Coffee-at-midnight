@@ -415,6 +415,12 @@ input[type="submit"] {
    
 }
 
+input[type="submit"]:hover {
+background-color: #C27A0A ;
+    color:#EFEBF7 ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 /**estilos del footer**/
 
 .site-footer {

@@ -1,0 +1,19 @@
+//SECCIONES DE TEXTO CON IMAGENES A UN LADO
+.text-side-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-left-image-section{
+    @extend .text-side-content;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+}
+
+.text-right-image-section{
+    @extend .text-side-content;
+    grid-template-columns: 1fr 3fr;
+    gap: 6.25rem;
+}
+
