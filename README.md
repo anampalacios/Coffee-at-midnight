@@ -36,9 +36,9 @@ El repositorio incluye todos los archivos necesarios para visualizar correctamen
 
 ## 🌐 Acceso al proyecto
 
-Puedes visualizar el sitio clonando el repositorio o accediendo desde el navegador:
+Puedes visualizar el sitio accediendo desde el navegador:
 
-🔗 [https://github.com/tu-usuario/coffee-at-midnight](https://github.com/tu-usuario/coffee-at-midnight)
+🔗https://anampalacios.github.io/Coffee-at-midnight/
 
 ---
 
