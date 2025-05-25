@@ -6,12 +6,10 @@ $font-main: "Montserrat", sans-serif;
 $font-accent: "Aleo", serif;
 $font-title: "Playfair Display", serif;
 
-
 // RESET Y ESTILOS GLOBALES
 *{ 
     margin: 0;
     padding: 0;
-    padding : 0;
     box-sizing: border-box;
 }
 
@@ -25,7 +23,7 @@ $font-title: "Playfair Display", serif;
     font-family:$font-accent;
 }
 
-.body{
+body{
     color: $primary-color-light;
 
     h2{
@@ -55,7 +53,7 @@ $font-title: "Playfair Display", serif;
 
 .parrafo-img-oscuro{
     background-color: #1E1F4B;
-    h2 h3 h4 p{
+    h2, h3, h4, p{
         color: $primary-color-light;
     }
 }
@@ -64,7 +62,7 @@ $font-title: "Playfair Display", serif;
     h2 {
         color: #4d4093;
     }
-    h3 h4 p{
+    h3, h4, p{
         color: $primary-color-dark;
     }
 }
@@ -100,7 +98,7 @@ input[type="submit"] {
     font-family: $font-accent;
     background-color: $accent-color;
     color: $primary-color-dark;
-    :hover{
+    &:hover{
         background-color: #C27A0A;
         color: $primary-color-light;
         cursor: pointer;
@@ -108,18 +106,52 @@ input[type="submit"] {
     }
 }
 
-.site-footer {
+.site-footer,
+.site-footer * {
     background-color: $primary-color-light;
+    font-family: 'Aleo', serif !important;
+    font-size: 0.95rem !important;
 }
-
 .text-footer {
-    font-family: $font-accent;
     color: $primary-color-dark;
-    font-size: 0.95rem;
+    p {
+        margin: 0;
+        margin-bottom: 0.25em;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+
 }
 
 .lista-redes-footer li {
     font-family: $font-accent;
     color: $primary-color-dark;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
+}
+
+//CALL TO ACTION
+.call-to-action {
+    font-family: $font-accent;
+    color: $primary-color-dark;
+    background-color: $accent-color;
+    border-style: none;
+    text-decoration: none;
+    font-size: medium;
+    display: inline-flex;
+    height: 3rem;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    border-radius: 3rem;
+    margin-top: 2.25rem;
+
+    &:hover{
+        background-color: #C27A0A;
+        color: $primary-color-light;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 }
