@@ -208,20 +208,22 @@ input[type=submit]:hover {
   align-items: flex-start;
 }
 
-.text-side-image-section, .text-right-image-section, .text-left-image-section {
+.text-left-image-section {
   display: grid;
   padding: 7.5rem 6.25rem;
   justify-items: center;
   justify-content: space-between;
   align-items: center;
-}
-
-.text-left-image-section {
   grid-template-columns: 2fr 1fr;
   gap: 5rem;
 }
 
 .text-right-image-section {
+  display: grid;
+  padding: 7.5rem 6.25rem;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
   grid-template-columns: 1fr 2fr;
   gap: 6.25rem;
 }
@@ -486,6 +488,22 @@ input[type=submit] {
   .hero-content p:last-of-type {
     margin-top: 0;
   }
+  /*Estilos de contenido*/
+  .text-side-image-section, .text-right-image-section, .text-left-image-section {
+    display: grid;
+    padding: 3rem 2rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-left-image-section {
+    grid-template-columns: 2fr 1fr;
+    gap: 1.75rem;
+  }
+  .text-right-image-section {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
 }
 /*Site Header*/
 /*Media query mobile*/
@@ -550,6 +568,106 @@ input[type=submit] {
     align-self: stretch;
     font-size: 1rem;
     line-height: normal;
+  }
+  /*Estilos de parrafo con imagen al lado*/
+  .text-left-image-section,
+  .text-right-image-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .text-left-image-section img,
+  .text-right-image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 1.2rem;
+  }
+  .text-side-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
+  .text-side-content h2 {
+    font-size: 2.25rem;
+    line-height: normal;
+  }
+  .text-side-content h3 {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  .text-side-content p {
+    font-size: 1rem;
+    align-content: flex-start;
+  }
+  .img-content-text-left {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .site-footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+    gap: 1.25rem;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logo-footer {
+    height: 2.5rem;
+  }
+  .lista-redes-footer {
+    display: flex;
+    width: 6rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .lista-redes-footer li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .lista-redes-footer p {
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    font-size: 0.5rem;
+    align-items: center;
+    font-weight: 50px;
+  }
+  .lista-redes-footer img {
+    height: 1rem;
+    width: auto;
+    display: block;
+  }
+  .lista-redes-footer .text-footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
 .hero-home {
