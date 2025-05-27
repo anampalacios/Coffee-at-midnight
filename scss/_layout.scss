@@ -1,10 +1,12 @@
 //ESTILOS HEADER
 
+
 .site-header {
     display: flex;
+    height: 6.25rem;
     justify-content: space-between; /*logo a la izquierda, nav a la derecha*/
     align-items: center; /*centrado vertical */
-    padding: 1.25rem 6.25rem;
+    padding: 1.25rem 4rem;
 
 }
 
@@ -19,6 +21,16 @@
         aspect-ratio: 351.40/56.00;
     }
 }
+
+
+ .nav-toggle {
+    display: none; // Oculta el botón en desktop
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
 
 .main-nav ul {
     display: flex;
@@ -36,21 +48,58 @@
     text-align: left;
     background-size: cover;
     background-position: center;
-   border-radius:0 0 12.5rem 12.5rem;
+    border-radius:0 0 12.5rem 12.5rem;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
     align-items: flex-start;
-    padding:7.5rem 6.25rem ;
+    padding-block:6.25rem;
+    padding: clamp(1rem, 5vw, 5rem);
+    box-sizing: border-box;
 }
 
 //ESTILOS DE CONTENIDO
 
-.img-content-text-left {
+.img-content-text-left{
     display: inline-block;
     text-align: center;
+}
+
+.text-left-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+
+.text-right-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+//SECCIONES DE TEXTO CON IMAGENES A UN LADO
+.text-side-image-section {
+    display: grid; 
+    padding: 7.5rem 6.25rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-left-image-section {
+    @extend .text-side-image-section;
+    grid-template-columns: 2fr 1fr; // Texto a la izquierda, imagen a la derecha
+    gap:5rem;
+}
+
+.text-right-image-section {
+    @extend .text-side-image-section;
+    grid-template-columns: 1fr 2fr; // Imagen a la izquierda, texto a la derecha
+    gap: 6.25rem;
 }
 
 
