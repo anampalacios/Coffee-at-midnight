@@ -489,20 +489,59 @@ input[type=submit] {
     margin-top: 0;
   }
   /*Estilos de contenido*/
-  .text-side-image-section, .text-right-image-section, .text-left-image-section {
+  .img-content-text-left {
+    display: inline-block;
+    text-align: center;
+  }
+  .text-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-left-image-section {
     display: grid;
-    padding: 3rem 2rem;
+    padding: 3rem 2.25rem;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
-  }
-  .text-left-image-section {
     grid-template-columns: 2fr 1fr;
-    gap: 1.75rem;
+    gap: 1.5rem;
+  }
+  .text-left-image-section img {
+    width: 13rem;
+    height: auto;
   }
   .text-right-image-section {
+    display: grid;
+    padding: 3rem 2.25rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  .text-side-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
+  .text-side-content h2 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .text-side-content h3 {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .text-side-content p {
+    font-size: 0.75rem;
+    align-content: flex-start;
   }
 }
 /*Site Header*/
@@ -585,7 +624,6 @@ input[type=submit] {
     max-width: 100%;
     height: auto;
     display: block;
-    padding: 1.2rem;
   }
   .text-side-content {
     display: flex;
@@ -622,7 +660,7 @@ input[type=submit] {
     height: auto;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 2rem 3rem 5rem 3rem;
     gap: 1.25rem;
   }
   .footer-left {
@@ -633,6 +671,10 @@ input[type=submit] {
   }
   .logo-footer {
     height: 2.5rem;
+  }
+  .text-footer {
+    display: flex;
+    text-align: center;
   }
   .lista-redes-footer {
     display: flex;
@@ -664,9 +706,9 @@ input[type=submit] {
     width: auto;
     display: block;
   }
-  .lista-redes-footer .text-footer {
+  .footer-datos {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
   }
 }
