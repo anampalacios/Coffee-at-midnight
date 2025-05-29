@@ -160,7 +160,6 @@
 
 .logo-footer {
     height: 2.5rem;
-    align-self: center !important;
 }
  .text-footer {
         display: flex;
@@ -203,6 +202,63 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+//SECCION STAFF
+
+.staff-section {
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    padding: 1.2rem 1.25rem;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.staff-header
+{
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+.staff-grid {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.staff-card {
+    display:inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    img {
+        display: flex;
+        width: auto;
+        height: 100%;
+
+    }
+        
+}
+.staff-text {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: flex-start;
+    h4 {
+         text-align:left;
+         font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+
+.cta-final-staff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 }

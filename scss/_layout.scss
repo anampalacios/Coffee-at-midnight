@@ -152,12 +152,14 @@ align-items: flex-start;
 
 .staff-section{
   padding: 6.25rem 6.25rem;
+  width: 100%;
   text-align: start;  
 }
 
 .staff-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
     
@@ -168,18 +170,12 @@ align-items: flex-start;
         margin-bottom: 2.25rem;
     }
     h4 {
-         margin-bottom: 2.25rem;
-         text-align: center;
+        min-height: 4rem;
+        margin-bottom: 2rem;
+        text-align: left;
     }
     
 }
-
-.parrafo-smaller{
-    font-size: 0.5rem;
-    line-height: 1.4;
-}
-
-
 .cta-final-staff{
     display: flex;
     justify-content: center;

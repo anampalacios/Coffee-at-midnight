@@ -31,7 +31,7 @@ body h3 {
 body h4 {
   font-family: "Aleo", serif;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 body p {
   font-family: "Montserrat", sans-serif;
@@ -270,12 +270,14 @@ input[type=submit]:hover {
 
 .staff-section {
   padding: 6.25rem 6.25rem;
+  width: 100%;
   text-align: start;
 }
 
 .staff-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -284,13 +286,9 @@ input[type=submit]:hover {
   margin-bottom: 2.25rem;
 }
 .staff-card h4 {
-  margin-bottom: 2.25rem;
-  text-align: center;
-}
-
-.parrafo-smaller {
-  font-size: 0.5rem;
-  line-height: 1.4;
+  min-height: 4rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .cta-final-staff {
@@ -547,6 +545,41 @@ input[type=submit] {
     height: fit-content;
     font-size: 80%;
   }
+  .staff-section {
+    padding: 6.25rem 6.25rem;
+    text-align: start;
+  }
+  .staff-header h2 {
+    font-size: 2rem;
+  }
+  .staff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .staff-card {
+    align-items: center;
+  }
+  .staff-card img {
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2.25rem;
+  }
+  .staff-text h4 {
+    margin-bottom: 2.25rem;
+    text-align: left;
+  }
+  .staff-text p {
+    font-size: 1rem;
+  }
+  .cta-final-staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
   .site-footer {
     display: flex;
     justify-content: space-between;
@@ -732,7 +765,6 @@ input[type=submit] {
   }
   .logo-footer {
     height: 2.5rem;
-    align-self: center !important;
   }
   .text-footer {
     display: flex;
@@ -772,6 +804,53 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .staff-section {
+    display: flex;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.2rem 1.25rem;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .staff-header h2 {
+    font-size: 2.25rem;
+  }
+  .staff-grid {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .staff-card {
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .staff-card img {
+    display: flex;
+    width: auto;
+    height: 100%;
+  }
+  .staff-text {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .staff-text h4 {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  .staff-text p {
+    font-size: 1rem;
+  }
+  .cta-final-staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 }
 .hero-home {

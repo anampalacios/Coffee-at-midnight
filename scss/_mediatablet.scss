@@ -151,6 +151,52 @@ align-items: flex-start;
     height: fit-content;
     font-size: 80%;
 }
+//SECCION STAFF
+
+.staff-section{
+  padding: 6.25rem 6.25rem;
+  text-align: start;  
+}
+
+.staff-header{
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.staff-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.staff-card {
+    align-items: center;
+    img {
+        align-items: center;
+        width: 80%;
+        margin-bottom: 2.25rem;
+    }
+}
+.staff-text {
+ h4 {
+    margin-bottom: 2.25rem;
+    text-align: left;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+  
+.cta-final-staff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 //FOOTER 
