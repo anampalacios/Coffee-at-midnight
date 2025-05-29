@@ -85,12 +85,6 @@
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;  
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-
-    }
 }
 
 .text-side-content{
@@ -116,7 +110,26 @@
 .img-content-text-left{
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-self: center;
+     img {
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+}
+}
+.img-content-text-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+      img{
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+}
 }
 .call-to-action{
     display: flex;
@@ -124,6 +137,8 @@
     align-items: center;
     align-content: center;
 }
+
+
 //FOOTER 
 
 .site-footer {
@@ -145,6 +160,7 @@
 
 .logo-footer {
     height: 2.5rem;
+    align-self: center !important;
 }
  .text-footer {
         display: flex;

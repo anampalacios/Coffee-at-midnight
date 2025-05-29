@@ -28,7 +28,7 @@
     }
 }
 .nav-toggle {
-    display: none; // Oculta el botón en desktop
+    display: none; // Oculta el botón en desktop y tablet
     font-size: 2rem;
     background: none;
     border: none;
@@ -71,7 +71,7 @@
     box-sizing: border-box;
     h1{
         align-self: stretch;
-        font-size: 3rem;
+        font-size: 2.75rem;
         line-height: normal;
     }
     p{
@@ -84,19 +84,15 @@
         margin-top: 0;
     }
     }
-    /*Estilos de contenido*/ 
+
+ /*Estilos de contenido*/ 
     
-    .img-content-text-left{
+.img-content-text-left{
     display: inline-block;
     text-align: center;
 }
-.text-left-content{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-}
 
-.text-right-content{
+.text-side-content{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -104,48 +100,110 @@ align-items: flex-start;
 
 //SECCIONES DE TEXTO CON IMAGENES A UN LADO
 
-.text-left-image-section {
-    display: grid; 
-    padding: 3rem 2.25rem;
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 2fr 1fr; // Texto a la izquierda, imagen a la derecha
-    gap:1.5rem;
-    img{
-        width: 13rem;
-        height: auto;
-    }
-}
-
+.text-left-image-section,
 .text-right-image-section {
     display: grid; 
     padding: 3rem 2.25rem;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: 1fr 2fr; // Imagen a la izquierda, texto a la derecha
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr; // Texto a la izquierda, imagen a la derecha
+    gap:1.5rem;
 }
+
 .text-side-content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     align-self: stretch;
+
     h2{
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: normal;
     }
     h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: normal;
 
     }
     p{
-        font-size: 0.75rem;
+        font-size: 1rem;
         align-content: flex-start;
     }
 }
+.img-content-text-left{
+    display: flex;
+    align-items: center;
+     img {
+        width: 100%;
+        height: auto;
+     }
+}
+.img-content-text-right{
+    display: flex;
+    align-items: center;
+    img{
+        width:100%;
+        height: auto;
+    }
+}
+.call-to-action {
+    height: fit-content;
+    font-size: 80%;
+}
 
 
+//FOOTER 
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 6.25rem;
+  gap: 2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-footer {
+    height: 2.5rem
+    
+}
+
+.lista-redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    width: 80%;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    
+    }
+    p{
+        margin: 0;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        height: 1rem;
+        width: auto;   
+        display:block ;
+        
+        
+    }
+}
 }
