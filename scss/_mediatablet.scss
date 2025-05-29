@@ -158,6 +158,58 @@ align-items: flex-start;
     height: fit-content;
     font-size: 80%;
 }
+
+//LAYOUT DE DOS COLUMNAS
+
+.grid-header{
+    display: flex;
+    padding: 0 2.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.two-column-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2.25rem;
+    gap: 1rem;
+    align-items: start;
+}
+
+.two-column-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 100%;
+    max-width: 100%;
+    gap: 0.25rem;
+    margin-bottom: 2.5rem;
+    img {
+         max-width: 100%;
+         height: auto;
+    }
+    img:last-of-type {
+        margin-bottom: 2rem;
+    }
+    h3{
+        margin: 0;
+    }
+    p {
+        max-width: 95%;
+        margin: 0;
+    }
+}
+
+.gallery-content {
+    margin-top: 5rem;
+}
+
+.platos-especiales{
+    padding: 1.5rem 0;
+}
+
 //SECCION STAFF
 
 .staff-section{
