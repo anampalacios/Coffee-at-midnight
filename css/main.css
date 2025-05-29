@@ -24,7 +24,7 @@ body h2 {
 }
 body h3 {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -486,6 +486,20 @@ input[type=submit] {
   .hero-content p:last-of-type {
     margin-top: 0;
   }
+  body h2 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  body h3 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  body h4 {
+    font-size: 1.25rem;
+  }
+  body p {
+    font-size: 1rem;
+  }
   /*Estilos de contenido*/
   .img-content-text-left {
     display: inline-block;
@@ -512,16 +526,7 @@ input[type=submit] {
     align-items: flex-start;
     align-self: stretch;
   }
-  .text-side-content h2 {
-    font-size: 2rem;
-    line-height: normal;
-  }
-  .text-side-content h3 {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
   .text-side-content p {
-    font-size: 1rem;
     align-content: flex-start;
   }
   .img-content-text-left {
@@ -548,9 +553,7 @@ input[type=submit] {
   .staff-section {
     padding: 6.25rem 6.25rem;
     text-align: start;
-  }
-  .staff-header h2 {
-    font-size: 2rem;
+    width: 100%;
   }
   .staff-grid {
     display: grid;
@@ -570,9 +573,6 @@ input[type=submit] {
   .staff-text h4 {
     margin-bottom: 2.25rem;
     text-align: left;
-  }
-  .staff-text p {
-    font-size: 1rem;
   }
   .cta-final-staff {
     display: flex;
@@ -689,6 +689,21 @@ input[type=submit] {
     font-size: 1rem;
     line-height: normal;
   }
+  body h2 {
+    font-size: 2.25rem;
+    line-height: normal;
+  }
+  body h3 {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  body h4 {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  body p {
+    font-size: 1rem;
+  }
   /*Estilos de parrafo con imagen al lado*/
   .text-left-image-section,
   .text-right-image-section {
@@ -706,16 +721,7 @@ input[type=submit] {
     align-items: center;
     align-self: stretch;
   }
-  .text-side-content h2 {
-    font-size: 2.25rem;
-    line-height: normal;
-  }
-  .text-side-content h3 {
-    font-size: 1.25rem;
-    line-height: normal;
-  }
   .text-side-content p {
-    font-size: 1rem;
     align-content: flex-start;
   }
   .img-content-text-left {
@@ -747,6 +753,31 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     align-content: center;
+  }
+  .grid-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1.25rem;
+  }
+  .two-column-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.25rem;
+    gap: 1rem;
+    width: 100%;
+  }
+  .two-column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  .gallery-content {
+    margin-top: 5rem;
+  }
+  .platos-especiales {
+    padding: 1.5rem 0;
   }
   .site-footer {
     display: flex;
@@ -814,9 +845,6 @@ input[type=submit] {
     flex-direction: column;
     flex-shrink: 0;
   }
-  .staff-header h2 {
-    font-size: 2.25rem;
-  }
   .staff-grid {
     display: flex;
     width: 100%;
@@ -841,10 +869,6 @@ input[type=submit] {
   }
   .staff-text h4 {
     text-align: left;
-    font-size: 1.25rem;
-  }
-  .staff-text p {
-    font-size: 1rem;
   }
   .cta-final-staff {
     display: flex;
