@@ -1,6 +1,6 @@
-@use 'base/base';
-@use 'layout/layout';
-@use 'mediaqueries/mediamobile';
-@use 'mediaqueries/mediatablet';
-@use'components/bgimages';
+@use 'base/base' as *;
+@use 'layout/layout' as *;
+@use 'mediaqueries/mediamobile' as *;
+@use 'mediaqueries/mediatablet' as *;
+@use'components/bgimages' as *;
 

@@ -1,7 +1,3 @@
-@use 'base' as *;
-@use 'layout';
-@use 'mediatablet';
-
 //ESTILOS HEADER
 
 /*Site Header*/
@@ -180,6 +176,15 @@ p{
 .platos-especiales{
     padding: 1.5rem 0;
     gap: 0.25rem;
+}
+
+//PÁGINA DE CONTACTO
+.contact-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 
