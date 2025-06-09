@@ -183,13 +183,13 @@ align-items: flex-start;
     height: 100%;
     max-width: 100%;
     gap: 0.25rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     img {
          max-width: 100%;
          height: auto;
     }
     img:last-of-type {
-        margin-bottom: 2rem;
+        margin-bottom: 0.25rem;
     }
     h3{
         margin: 0;
@@ -199,13 +199,15 @@ align-items: flex-start;
         margin: 0;
     }
 }
-
+.menu-estandar{
+    margin-bottom: 3rem;
+}
 .gallery-content {
     margin-top: 5rem;
 }
 
 .platos-especiales{
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 //SECCION STAFF
@@ -255,6 +257,7 @@ align-items: flex-start;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    padding: 2rem 2.25rem;
 }
 
 .formulario {
