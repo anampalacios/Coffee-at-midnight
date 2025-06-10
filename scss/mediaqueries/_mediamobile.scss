@@ -27,13 +27,35 @@
         align-self: stretch;
     }
 }
-.nav-toggle {
-    display: block; // Mostrar botón hamburguesa
-    }
+.menu-toggle{
+    display: none;
+}
+ .nav-toggle {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    z-index: 20;
+  }
 
-.main-nav ul .open {
-    display: flex; 
-    }
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.menu-toggle:checked + .nav-toggle + .nav-links {
+  display: flex;
+}
 
 //ESTILOS DE HERO SECTION
 .hero {

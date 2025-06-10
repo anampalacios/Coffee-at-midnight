@@ -23,6 +23,16 @@ $font-title: "Playfair Display", serif;
     font-family:$font-accent;
 }
 
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+    color: $primary-color-dark;
+}
+
 body{
     color: $primary-color-light;
 
