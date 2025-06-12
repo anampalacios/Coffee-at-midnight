@@ -1,0 +1,8 @@
+//ANIMACIONES DE IMAGENES
+.two-column-content img {
+    transition: rotate 0.5s ease;
+    &:hover{
+        rotate: 3deg;
+        opacity: 60%;
+    }
+}

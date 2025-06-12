@@ -12,6 +12,11 @@
   text-decoration: none;
   color: #1E1F4B;
   font-family: "Aleo", serif;
+  transition: font-weight 0.2s ease;
+}
+.main-nav ul li a:hover {
+  font-weight: bolder;
+  text-decoration-line: underline;
 }
 
 .main-nav ul {
@@ -174,7 +179,7 @@ input[type=submit]:hover {
 .main-nav ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
   font-size: 1rem;
 }
@@ -748,7 +753,7 @@ input[type=submit] {
     display: none;
     flex-direction: column;
     position: absolute;
-    font-size: larger;
+    font-size: 3rem;
     gap: 0rem;
     top: 3.75rem;
     left: 0;
@@ -766,7 +771,7 @@ input[type=submit] {
     margin: 1rem 0;
   }
   .menu-toggle:checked ~ .nav-links {
-    max-height: 300px;
+    max-height: 75%;
     opacity: 1;
     visibility: visible;
   }
@@ -1025,4 +1030,12 @@ input[type=submit] {
 
 .hero-menu {
   background-image: url("../assets/img/hero-images/hero-img-menu.png");
+}
+
+.two-column-content img {
+  transition: rotate 0.5s ease;
+}
+.two-column-content img:hover {
+  rotate: 3deg;
+  opacity: 60%;
 }/*# sourceMappingURL=main.css.map */
