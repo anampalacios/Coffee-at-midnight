@@ -1,49 +1,48 @@
-# ☕ Coffee at Midnight - Sitio Web
+# ☕ Coffee at Midnight - Website
 
-Este es un proyecto de desarrollo web creado como parte de una entrega académica. Se trata del sitio web de **Coffee at Midnight**, un café con identidad nocturna y estilo elegante, inspirado en el universo musical de Taylor Swift.
+This is a web development project created as part of an academic assignment. It is the website for **Coffee at Midnight**, a café with a nocturnal identity and elegant style, inspired by the musical universe of Taylor Swift.
+---
+
+## 📁 Project Structure 
+
+The repository includes all the files necessary to display the site correctly:
+
+- `index.html` — Main website structure 
+- `styles.css` — Custom style sheet
+- Folder `assets/img` — Site images (logo, social media icons, images, etc.)
+- Contact form 
+- Footer with contact info and social media
 
 ---
 
-## 📁 Estructura del proyecto
-
-El repositorio incluye todos los archivos necesarios para visualizar correctamente el sitio:
-
-- `index.html` — Estructura principal del sitio
-- `styles.css` — Hoja de estilos personalizada
-- Carpeta `assets/img` — Imágenes del sitio (logo, íconos de redes, imagenes, etc.)
-- Formulario de contacto 
-- Footer con información de contacto y redes sociales
-
----
-
-## 🛠 Tecnologías utilizadas
+## 🛠 Used Technologies
 
 - HTML5
 - CSS3
-- Tipografías personalizadas: `Aleo`, `Playfair Display` y `Montserrat`
-- Íconos personalizados de redes sociales
+- Custom Fonts: `Aleo`, `Playfair Display` and `Montserrat`
+- Custom social media icons
 
 ---
 
-## ✅ Funcionalidades destacadas
+## ✅ Key features
 
-- Diseño inspirado en maqueta de Figma.
-- Estilos coherentes con identidad visual definida.
-- Hover en botón de call to action.
-- Galerías para menú y eventos
+- Design inspired by Figma mockup.
+- Styles consistent with defined visual identity.
+- Hover on call-to-action button.
+- Galleries for menu and events.
 
 ---
 
-## 🌐 Acceso al proyecto
+## 🌐 Project access
 
-Puedes visualizar el sitio accediendo desde el navegador:
-
+You can view the site by accessing it from your browser:
 🔗https://coffee-at-midnight.vercel.app/
 
 ---
 
-## 🙌 Autora
+## 🙌 Author
 
-Ana Palacios - am23.2001@gmail.com
+Ana Palacios - ana.maria.sanchez.palacios1@gmail.com
+
 ---
 
